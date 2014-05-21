@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Denk One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Denk One'), local('DenkOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/denkone/v2/ahLepySZXU_KFQaVZ6XDvPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+.font-effect-stonewash {
+  -webkit-mask-image: url(//themes.googleusercontent.com/static/patterns/stonewash.png);
+  color: #343956;
+}
+
+body {
+  margin: 0 auto;
+  width: 1180px;
+  height: 100%
+}
+
+header {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+header div {
+  font-family: 'Denk One';
+}
+
+header div[role="banner"] {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+header div[role="complementary"] {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  position: absolute;
+  width: 200px;
+}
+
+nav a {
+  border-radius: 10px;
+  color: black;
+  display: block;
+  font-family: 'Denk One';
+  font-size: 30px;
+  padding-right: 10px;
+  text-align: right;
+  text-decoration: none;
+  -webkit-transition: background-color 1s, color 1s, padding 1s, margin 1s;  /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s, color 1s, padding 1s, margin 1s;
+}
+
+nav a:not(#active):hover {
+  background-color: #24246B;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px 0px;
+}
+
+nav a#active {
+  background-color: #24246B;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px 0px;
+}
+
+section {
+  background-color: gray;
+  margin-left: 220px;
+  position: absolute;
+  width: 960px;
+  z-index: -1;
+  -webkit-transition: margin-top 1s;
+  transition: margin-top 1s;
+}
