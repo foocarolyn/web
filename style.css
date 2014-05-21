@@ -5,6 +5,13 @@
   src: local('Denk One'), local('DenkOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/denkone/v2/ahLepySZXU_KFQaVZ6XDvPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/RzoNiRR1p2Mqyyz2RwqSMw.woff) format('woff');
+}
+
 .font-effect-stonewash {
   -webkit-mask-image: url(//themes.googleusercontent.com/static/patterns/stonewash.png);
   color: #343956;
@@ -12,7 +19,7 @@
 
 body {
   margin: 0 auto;
-  width: 1180px;
+  width: 900px;
   height: 100%
 }
 
@@ -68,11 +75,28 @@ nav a#active {
 }
 
 section {
-  background-color: gray;
   margin-left: 220px;
   position: absolute;
-  width: 960px;
+  width: 680px;
   z-index: -1;
   -webkit-transition: margin-top 1s;
   transition: margin-top 1s;
+}
+
+section div[role="heading"] {
+  border-bottom: 2px solid #24246B;
+  color: #24246B;
+  font-family: 'Denk One';
+  font-size: 50px;
+  margin-bottom: 30px
+}
+
+section div[role="main"] {
+  font-family: 'Oxygen';
+  line-height: 1.5em;
+}
+section div[role="banner"] {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
