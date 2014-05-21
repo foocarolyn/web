@@ -92,11 +92,22 @@ section div[role="heading"] {
 }
 
 section div[role="main"] {
+  color: gray;
   font-family: 'Oxygen';
   line-height: 1.5em;
 }
+
 section div[role="banner"] {
+  color: black;
   font-weight: bold;
   font-size: 20px;
+}
+
+section#about div[role="banner"] {
+  margin-bottom: 15px;
+}
+
+section div.subHeading {
+  font-size: 12px;
   margin-bottom: 15px;
 }
