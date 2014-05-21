@@ -29,13 +29,33 @@
         I graduated from National University of Singapore with a Double Degree in Computer Science and Applied Mathematics. My past experiences include API development for <a href="http://www.vsee.com/api" target="_blank">VSee</a>, self-update iPad menu for <a href="https://www.facebook.com/Tenza.Izakaya" target="_blank">Tenza Izayaki</a> and internal case management system for <a href="http://www.fycs.org/" target="_blank">Fei Yue Community Services</a>.
       </p>
       <p>
-        As a software engineer, I believe that a project starts with understanding what are the root problems and needs. A successful solution should be simple and intuitive for target users that results in a pleasant experience.
+        As a software engineer, I believe that a project starts with understanding what are the root problems and needs. A successful solution should be simple, adaptable and intuitive for target users and results in a pleasant experience.
       </p>
     </div>
   </section>
 
   <section id="edu" style="margin-top:-1000px">
-    Hi, this is the edu section Hi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu sectionHi, this is the edu section
+    <div role="heading" class="font-effect-stonewash">Education</div>
+    <div role="main">
+      <div role="banner">National University of Singapore</div>
+      <div class="subHeading">SEPT 2009 - JUN 2014</div>
+      <ul>
+        <li>
+          Double Degree in Bachelor of Computer Science (BComp - Computer Science) & Bachelor of Science (BSc - Applied Mathematics)
+        </li>
+        <li>GPA:</li>
+        <ul>
+          <li>4.52 / 5.00 - (BComp)</li>
+          <li>4.13 / 5.00 - (BSc)</li>
+        </ul>
+        <li>
+          Taken courses such as Design and Analysis of Algorithms (A-), Software Engineering on Modern Application Platforms (A), Database Systems (A) and Introduction to Computer Networks (A+) 
+        </li>
+        <li>
+          For full transcript, click <a href="" target="_blank">here</a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section id="exp" style="margin-top:-1000px">
@@ -59,6 +79,16 @@
       var section = e.getAttribute("href").substring(1);
       section = document.getElementById(section);
       section.style.marginTop = "0px";
+    }
+    if (window.location.hash) {
+      var nav = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
+      for (var i in nav) {
+        var navItem = nav[i];
+        if (navItem.getAttribute("href") == window.location.hash) {
+          switchNav(navItem);
+          break;
+        }
+      }
     }
   </script>
 </body>
