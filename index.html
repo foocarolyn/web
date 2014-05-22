@@ -118,7 +118,7 @@ necessary information are captured and accounted for when generating external re
     <header role="banner" class="font-effect-stonewash">Skills</header>
   </section>
 
-  <a href="#" id="scrollTop">^</span>
+  <span id="scrollTop" onClick="scrollToTop(200);">^</span>
 
   <script type="text/javascript">
     var heights = {
@@ -141,6 +141,7 @@ necessary information are captured and accounted for when generating external re
       section = document.getElementById(section);
       section.style.marginTop = "0px";
     }
+
     if (window.location.hash) {
       var nav = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
       for (var i in nav) {
@@ -152,12 +153,18 @@ necessary information are captured and accounted for when generating external re
       }
     }
 
-    window.onscroll = function() {
-      if (window.scrollY > 100) {
-        document.getElementById("scrollTop").style.opacity = 0.5;
-      }
-      else {
-        document.getElementById("scrollTop").style.opacity = 0;  
+    function scrollToTop(duration) {
+      if (duration <= 0) return;
+      setTimeout(function () {
+        window.scrollBy(0, -(window.scrollY / duration * 10));
+        scrollToTop(duration - 10);
+      }, 10);
+    }
+
+    window.onload = function() {
+      window.onscroll = function() {
+        scroll = document.getElementById("scrollTop");
+        scroll.className = (window.scrollY > 200) ? "active" : "";
       }
     }
 
