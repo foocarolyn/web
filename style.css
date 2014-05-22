@@ -8,8 +8,8 @@
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
-  font-weight: 400;
-  src: local('Oxygen'), local('Oxygen-Regular'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/RzoNiRR1p2Mqyyz2RwqSMw.woff) format('woff');
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/AwBqWF2kjhlybWamaKMPcT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
 .font-effect-stonewash {
@@ -20,24 +20,22 @@
 body {
   margin: 0 auto;
   width: 900px;
-  height: 100%
+  height: 100%;
+  overflow-y: scroll;
 }
 
-header {
+header#pageHeader {
   background-color: white;
+  font-family: 'Denk One';
   margin-bottom: 50px;
 }
 
-header div {
-  font-family: 'Denk One';
-}
-
-header div[role="banner"] {
+header#pageHeader div[role="banner"] {
   font-size: 100px;
   font-weight: bolder;
 }
 
-header div[role="complementary"] {
+header#pageHeader div[role="complementary"] {
   font-size: 20px;
   font-weight: bold;
 }
@@ -83,7 +81,7 @@ section {
   transition: margin-top 1s;
 }
 
-section div[role="heading"] {
+section header[role="banner"] {
   border-bottom: 2px solid #24246B;
   color: #24246B;
   font-family: 'Denk One';
@@ -91,23 +89,47 @@ section div[role="heading"] {
   margin-bottom: 30px
 }
 
-section div[role="main"] {
+
+article {
   color: gray;
   font-family: 'Oxygen';
-  line-height: 1.5em;
+  line-height: 1.4em;
+  margin-bottom: 60px;
 }
 
-section div[role="banner"] {
+article header[role="heading"] {
   color: black;
   font-weight: bold;
   font-size: 20px;
 }
 
-section#about div[role="banner"] {
+section#about article header[role="heading"] {
   margin-bottom: 15px;
 }
 
-section div.subHeading {
+article div.subHeading {
   font-size: 12px;
   margin-bottom: 15px;
 }
+
+article ul li {
+  margin-bottom: 10px;
+}
+
+#scrollTop {
+  background-color: black;
+  border-radius: 10px;
+  bottom: 50px;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 12px 7px;
+  position: fixed;
+  opacity: 0.5;
+  right: 50px;
+  text-decoration: none;
+  transition:opacity 0.7s ease-out;
+}
+
+#scrollTop:hover{
+  opacity: 1;
+};
