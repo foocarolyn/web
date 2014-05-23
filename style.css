@@ -14,7 +14,7 @@
 
 .font-effect-stonewash {
   -webkit-mask-image: url(//themes.googleusercontent.com/static/patterns/stonewash.png);
-  color: #343956;
+  color: #003366;
 }
 
 body {
@@ -47,7 +47,7 @@ nav {
 
 nav a {
   border-radius: 10px;
-  color: #343956;;
+  color: #003366;;
   display: block;
   font-family: 'Denk One';
   font-size: 30px;
@@ -59,14 +59,14 @@ nav a {
 }
 
 nav a:not(#active):hover {
-  background-color: #24246B;
+  background-color: #003366;
   color: white;
   padding: 10px 10px;
   margin: 5px 0px;
 }
 
 nav a#active {
-  background-color: #24246B;
+  background-color: #003366;
   color: white;
   padding: 10px 10px;
   margin: 5px 0px;
@@ -82,23 +82,27 @@ section {
 }
 
 section header[role="banner"] {
-  border-bottom: 2px solid #24246B;
-  color: #24246B;
+  border-bottom: 2px solid #003366;
+  color: #003366;
   font-family: 'Denk One';
   font-size: 50px;
   margin-bottom: 30px
 }
 
+section a {
+  color: #FF6600;
+  text-decoration: none;
+}
 
 article {
-  color: gray;
+  color: #003366;
   font-family: 'Oxygen';
   line-height: 1.4em;
   margin-bottom: 60px;
 }
 
 article header[role="heading"] {
-  color: black;
+  color: #FF6600;
   font-weight: bold;
   font-size: 20px;
 }
@@ -135,7 +139,7 @@ section#skills ul li {
   text-decoration: none;
   -webkit-transition: opacity 0.5s;
   -webkit-transform: translateZ(0);
-  transition: opacity 0.5s;
+  transition: opacity 0.5s; 
 }
 
 .active {
