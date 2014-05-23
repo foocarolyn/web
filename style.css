@@ -103,7 +103,7 @@ article header[role="heading"] {
   font-size: 20px;
 }
 
-section#about article header[role="heading"] {
+section#about section#skills header[role="heading"] {
   margin-bottom: 15px;
 }
 
@@ -114,6 +114,10 @@ article div.subHeading {
 
 article ul li {
   margin-bottom: 10px;
+}
+
+section#skills ul li {
+  margin-bottom: 5px;
 }
 
 #scrollTop {
@@ -129,7 +133,6 @@ article ul li {
   opacity: 0;
   right: 50px;
   text-decoration: none;
-  -webkit-transform: translateZ(0);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
