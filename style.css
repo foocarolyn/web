@@ -134,6 +134,7 @@ section#skills ul li {
   right: 50px;
   text-decoration: none;
   -webkit-transition: opacity 0.5s;
+  -webkit-transform: translateZ(0);
   transition: opacity 0.5s;
 }
 
