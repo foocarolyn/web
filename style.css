@@ -47,7 +47,7 @@ nav {
 
 nav a {
   border-radius: 10px;
-  color: #003366;;
+  color: #003366;
   display: block;
   font-family: 'Denk One';
   font-size: 30px;
@@ -149,4 +149,22 @@ section#skills ul li {
 .active:hover {
   opacity: 1 !important;
   cursor: pointer !important;
+}
+
+#resume {
+  background-color: #FF6600;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Oxygen';
+  font-size: 20px;
+  font-weight: bolder;
+  opacity: 0.7;
+  padding: 10px;
+  -webkit-transition: opacity 0.5s;
+  -webkit-transform: translateZ(0);
+  transition: opacity 0.5s; 
+}
+
+#resume:hover {
+  opacity: 1;
 }
